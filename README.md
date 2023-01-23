@@ -41,7 +41,7 @@ Find us at:
 
 [Your_spotify](https://github.com/Yooooomi/your_spotify) is a self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it! It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.
 
-[![your_spotify](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/your_spotify.png)](https://github.com/Yooooomi/your_spotify)
+[![your_spotify](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/your_spotify-logo.png)](https://github.com/Yooooomi/your_spotify)
 
 ## Supported Architectures
 

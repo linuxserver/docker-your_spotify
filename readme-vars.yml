@@ -3,7 +3,7 @@
 # project information
 project_name: your_spotify
 project_url: "https://github.com/Yooooomi/your_spotify"
-project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/your_spotify.png"
+project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/your_spotify-logo.png"
 project_blurb: |
   [{{ project_name|capitalize }}]({{ project_url }}) is a self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it! It's composed of a web server which polls the Spotify API every now and then and a web application on which you can explore your statistics.
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
