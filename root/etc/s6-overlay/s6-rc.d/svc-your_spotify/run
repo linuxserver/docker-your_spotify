@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+export API_ENDPOINT="${APP_URL}/api"
+export CLIENT_ENDPOINT="${APP_URL}"
+
+s6-setuidgid abc yarn --cwd /app/www/server migrate
+
+exec \
+    s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 8000" \
+        cd /app/www/server s6-setuidgid abc yarn start
