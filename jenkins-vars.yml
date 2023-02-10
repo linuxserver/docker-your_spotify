@@ -1,0 +1,31 @@
+---
+
+# jenkins variables
+project_name: docker-your_spotify
+external_type: github_stable
+release_type: stable
+release_tag: latest
+ls_branch: main
+build_armhf: false
+repo_vars:
+  - EXT_GIT_BRANCH = 'main'
+  - EXT_USER = 'Yooooomi'
+  - EXT_REPO = 'your_spotify'
+  - CONTAINER_NAME = 'your_spotify'
+  - BUILD_VERSION_ARG = 'YOUR_SPOTIFY_VERSION'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-your_spotify'
+  - DOCKERHUB_IMAGE = 'linuxserver/your_spotify'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/your_spotify'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/your_spotify'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH='true'
+  - CI='false'
+  - CI_WEB='false'
+  - CI_PORT='80'
+  - CI_SSL='false'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_AUTH=''
+  - CI_WEBPATH=''
+  
