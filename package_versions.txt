@@ -19,7 +19,7 @@ NAME                                VERSION                TYPE
 @npmcli/query                       3.0.0                  npm     
 @npmcli/run-script                  6.0.0                  npm     
 @tootallnate/once                   2.0.0                  npm     
-@types/node                         18.15.11               npm     
+@types/node                         18.16.1                npm     
 @types/webidl-conversions           7.0.0                  npm     
 @types/whatwg-url                   8.2.2                  npm     
 @zeit/schemas                       2.29.0                 npm     
@@ -344,7 +344,7 @@ on-headers                          1.0.2                  npm
 once                                1.4.0                  npm     
 onetime                             5.1.2                  npm     
 oniguruma                           6.9.8-r0               apk     
-openssl                             3.0.8-r3               apk     
+openssl                             3.0.8-r4               apk     
 p-map                               4.0.0                  npm     
 pacote                              15.0.6                 npm     
 parse-conflict-json                 3.0.0                  npm     
