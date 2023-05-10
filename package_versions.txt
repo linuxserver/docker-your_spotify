@@ -19,7 +19,7 @@ NAME                                VERSION                TYPE
 @npmcli/query                       3.0.0                  npm     
 @npmcli/run-script                  6.0.0                  npm     
 @tootallnate/once                   2.0.0                  npm     
-@types/node                         18.16.3                npm     
+@types/node                         20.1.2                 npm     
 @types/webidl-conversions           7.0.0                  npm     
 @types/whatwg-url                   8.2.2                  npm     
 @zeit/schemas                       2.29.0                 npm     
