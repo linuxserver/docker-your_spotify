@@ -28,4 +28,6 @@ repo_vars:
   - CI_DOCKERENV='TZ=US/Pacific'
   - CI_AUTH=''
   - CI_WEBPATH=''
-  
+sponsor_links:
+  - { name: "your_spotify - github", url: "https://github.com/sponsors/Yooooomi" }
+  - { name: "your_spotify - paypal", url: "https://www.paypal.com/donate/?hosted_button_id=BLAPT49PK9A8G" }
