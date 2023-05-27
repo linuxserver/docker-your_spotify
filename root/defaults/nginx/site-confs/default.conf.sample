@@ -1,19 +1,24 @@
+## Version 2023/04/13 - Changelog: https://github.com/linuxserver/docker-your_spotify/commits/main/root/defaults/nginx/site-confs/default.conf.sample
+
 server {
     listen 80 default_server;
+    listen [::]:80 default_server;
 
-    listen 443 ssl;
-
-    root /app/www/client/build;
-    index index.php index.html index.htm;
+    listen 443 ssl http2 default_server;
+    listen [::]:443 ssl http2 default_server;
 
     server_name _;
 
-    ssl_certificate /config/keys/cert.crt;
-    ssl_certificate_key /config/keys/cert.key;
+    include /config/nginx/ssl.conf;
 
-    client_max_body_size 0;
+    root /app/www/client/build;
+    index index.html index.htm index.php;
 
     location / {
+        # enable for basic auth
+        #auth_basic "Restricted";
+        #auth_basic_user_file /config/nginx/.htpasswd;
+
         try_files $uri $uri/ /index.html;
     }
 
@@ -21,5 +26,10 @@ server {
         rewrite /foo/(.*) /$1  break;
         proxy_set_header Upgrade $http_upgrade;
         proxy_pass http://localhost:8080/;
+    }
+
+    # deny access to .htaccess/.htpasswd files
+    location ~ /\.ht {
+        deny all;
     }
 }
