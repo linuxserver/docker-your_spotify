@@ -142,7 +142,7 @@ depd                                2.0.0                   npm
 destroy                             1.2.0                   npm     
 dicer                               0.2.5                   npm     
 diff                                5.1.0                   npm     
-dotenv                              16.0.3                  npm     
+dotenv                              16.1.3                  npm     
 eastasianwidth                      0.2.0                   npm     
 ecdsa-sig-formatter                 1.0.11                  npm     
 ee-first                            1.1.1                   npm     
