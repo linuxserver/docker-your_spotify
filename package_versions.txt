@@ -24,7 +24,7 @@ NAME                                VERSION                 TYPE
 @tootallnate/once                   2.0.0                   npm   
 @tufjs/canonical-json               1.0.0                   npm   
 @tufjs/models                       1.0.4                   npm   
-@types/node                         20.5.3                  npm   
+@types/node                         20.5.7                  npm   
 @types/webidl-conversions           7.0.0                   npm   
 @types/whatwg-url                   8.2.2                   npm   
 @zeit/schemas                       2.29.0                  npm   
