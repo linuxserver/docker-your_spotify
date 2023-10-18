@@ -24,8 +24,8 @@ NAME                                VERSION                 TYPE
 @tootallnate/once                   2.0.0                   npm   
 @tufjs/canonical-json               1.0.0                   npm   
 @tufjs/models                       1.0.4                   npm   
-@types/node                         20.8.4                  npm   
-@types/webidl-conversions           7.0.1                   npm   
+@types/node                         20.8.7                  npm   
+@types/webidl-conversions           7.0.2                   npm   
 @types/whatwg-url                   8.2.2                   npm   
 @zeit/schemas                       2.29.0                  npm   
 abbrev                              1.1.1                   npm   
@@ -72,7 +72,7 @@ boxen                               7.0.0                   npm
 brace-expansion                     1.1.11                  npm   
 brace-expansion                     2.0.1                   npm   
 brotli-libs                         1.0.9-r14               apk   
-bson                                5.5.0                   npm   
+bson                                5.5.1                   npm   
 buffer                              6.0.3                   npm   
 buffer-equal-constant-time          1.0.1                   npm   
 buffer-from                         1.1.2                   npm   
@@ -167,6 +167,7 @@ fs-minipass                         2.1.0                   npm
 fs-minipass                         3.0.2                   npm   
 fs.realpath                         1.0.0                   npm   
 function-bind                       1.1.1                   npm   
+function-bind                       1.1.2                   npm   
 gauge                               4.0.4                   npm   
 gauge                               5.0.1                   npm   
 get-intrinsic                       1.2.1                   npm   
@@ -310,7 +311,7 @@ ms                                  2.1.2                   npm
 ms                                  2.1.3                   npm   
 multer                              1.4.4                   npm   
 musl                                1.2.4-r2                apk   
-musl-utils                          1.2.4-r1                apk   
+musl-utils                          1.2.4-r2                apk   
 mute-stream                         1.0.0                   npm   
 nano                                7.2-r1                  apk   
 ncurses-terminfo-base               6.4_p20230506-r0        apk   
@@ -319,7 +320,7 @@ netcat-openbsd                      1.219-r1                apk
 nghttp2-libs                        1.55.1-r0               apk   
 nginx                               1.24.0-r6               apk   
 node-gyp                            9.3.1                   npm   
-nodejs                              18.17.1-r0              apk   
+nodejs                              18.18.2-r0              apk   
 nopt                                6.0.0                   npm   
 nopt                                7.1.0                   npm   
 normalize-package-data              5.0.0                   npm   
@@ -339,7 +340,7 @@ npm-user-validate                   2.0.0                   npm
 npmlog                              6.0.2                   npm   
 npmlog                              7.0.1                   npm   
 object-assign                       4.1.1                   npm   
-object-inspect                      1.12.3                  npm   
+object-inspect                      1.13.0                  npm   
 on-finished                         2.3.0                   npm   
 on-finished                         2.4.1                   npm   
 on-headers                          1.0.2                   npm   
