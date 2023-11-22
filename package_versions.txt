@@ -25,7 +25,7 @@ NAME                                VERSION                 TYPE
 @tootallnate/once                   2.0.0                   npm   
 @tufjs/canonical-json               1.0.0                   npm   
 @tufjs/models                       1.0.4                   npm   
-@types/node                         20.9.2                  npm   
+@types/node                         20.9.4                  npm   
 @types/webidl-conversions           7.0.3                   npm   
 @types/whatwg-url                   11.0.3                  npm   
 @types/whatwg-url                   8.2.2                   npm   
@@ -433,7 +433,7 @@ send                                0.18.0                  npm
 serve                               14.2.1                  npm   
 serve-handler                       6.1.5                   npm   
 serve-static                        1.15.0                  npm   
-server                              1.7.2                   npm   
+server                              1.7.3                   npm   
 set-blocking                        2.0.0                   npm   
 set-function-length                 1.1.1                   npm   
 setprototypeof                      1.2.0                   npm   
