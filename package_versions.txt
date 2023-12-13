@@ -25,7 +25,7 @@ NAME                                VERSION                 TYPE
 @tootallnate/once                   2.0.0                   npm   
 @tufjs/canonical-json               1.0.0                   npm   
 @tufjs/models                       1.0.4                   npm   
-@types/node                         20.10.3                 npm   
+@types/node                         20.10.4                 npm   
 @types/webidl-conversions           7.0.3                   npm   
 @types/whatwg-url                   11.0.3                  npm   
 @types/whatwg-url                   8.2.2                   npm   
@@ -41,7 +41,7 @@ ajv                                 8.11.0                  npm
 alpine-baselayout                   3.4.3-r1                apk   
 alpine-baselayout-data              3.4.3-r1                apk   
 alpine-keys                         2.4-r1                  apk   
-alpine-release                      3.18.4-r0               apk   
+alpine-release                      3.18.5-r0               apk   
 ansi-align                          3.0.1                   npm   
 ansi-regex                          5.0.1                   npm   
 ansi-regex                          6.0.1                   npm   
@@ -128,7 +128,7 @@ coreutils                           9.3-r1                  apk
 cors                                2.8.5                   npm   
 cross-spawn                         7.0.3                   npm   
 cssesc                              3.0.0                   npm   
-curl                                8.4.0-r0                apk   
+curl                                8.5.0-r0                apk   
 dateformat                          4.6.3                   npm   
 debug                               2.6.9                   npm   
 debug                               4.3.4                   npm   
@@ -224,7 +224,7 @@ isarray                             0.0.1                   npm
 isarray                             1.0.0                   npm   
 isexe                               2.0.0                   npm   
 jackspeak                           2.2.0                   npm   
-jq                                  1.6-r3                  apk   
+jq                                  1.6-r4                  apk   
 json-parse-even-better-errors       3.0.0                   npm   
 json-schema-traverse                1.0.0                   npm   
 json-stringify-nice                 1.1.4                   npm   
@@ -241,7 +241,7 @@ libbsd                              0.11.7-r1               apk
 libbz2                              1.0.8-r5                apk   
 libc-utils                          0.7.2-r5                apk   
 libcrypto3                          3.1.4-r1                apk   
-libcurl                             8.4.0-r0                apk   
+libcurl                             8.5.0-r0                apk   
 libedit                             20221030.3.1-r1         apk   
 libexpat                            2.5.0-r1                apk   
 libgcc                              12.2.1_git20220924-r10  apk   
