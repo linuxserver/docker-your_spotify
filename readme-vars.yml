@@ -48,5 +48,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "25.12.23:", desc: "Existing users should update: site-confs/default.conf - Cleanup default site conf." }
   - { date: "23.01.23:", desc: "Rebase to Alpine 3.18, standardize nginx default site conf." }
   - { date: "23.01.23:", desc: "Initial Release." }
