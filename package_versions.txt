@@ -25,7 +25,7 @@ NAME                                VERSION                TYPE
 @sigstore/tuf                       2.2.0                  npm     
 @tufjs/canonical-json               2.0.0                  npm     
 @tufjs/models                       2.0.0                  npm     
-@types/node                         20.11.19               npm     
+@types/node                         20.11.22               npm     
 @types/webidl-conversions           7.0.3                  npm     
 @types/whatwg-url                   11.0.4                 npm     
 @types/whatwg-url                   8.2.2                  npm     
