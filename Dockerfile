@@ -10,7 +10,7 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="thespad"
 
 RUN \
-  echo "**** install server-buildstage packages ****" && \
+  echo "**** install buildstage packages ****" && \
   apk -U --update --no-cache add --virtual=build-dependencies \
     build-base \
     cmake \
@@ -30,13 +30,13 @@ RUN \
     /tmp/your_spotify.tar.gz -C \
     /app/www/ --strip-components=1 && \
   cd /app/www && \
-  yarn --frozen-lockfile && \
+  #yarn --frozen-lockfile && \
   cd /app/www/apps/server && \
   yarn build && \
   yarn --production --frozen-lockfile && \
   echo "*** install your_spotify client ***" && \
   cd /app/www/apps/client && \
-  yarn --frozen-lockfile --network-timeout 60000 && \
+  yarn --frozen-lockfile && \
   yarn build && \
   yarn cache clean && \
   apk del --purge \
