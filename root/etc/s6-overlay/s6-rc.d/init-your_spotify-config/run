@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bash
 # shellcheck shell=bash
 
-VAR_PATH="/app/www/client/build"
+VAR_PATH="/app/www/apps/client/build"
 
 cp "$VAR_PATH/variables-template.js" "$VAR_PATH/variables.js"
 
@@ -16,6 +16,3 @@ else
 fi
 
 HOME="/app"
-
-lsiown -R abc:abc \
-    /app
