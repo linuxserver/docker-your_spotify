@@ -30,7 +30,7 @@ RUN \
     /tmp/your_spotify.tar.gz -C \
     /app/www/ --strip-components=1 && \
   cd /app/www && \
-  #yarn --frozen-lockfile && \
+  yarn --frozen-lockfile && \
   cd /app/www/apps/server && \
   yarn build && \
   yarn --production --frozen-lockfile && \
