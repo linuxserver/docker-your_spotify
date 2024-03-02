@@ -35,10 +35,13 @@ RUN \
   yarn build && \
   yarn --production --frozen-lockfile && \
   echo "*** install your_spotify client ***" && \
+  mv /app/www/node_modules /app/www/node_modules.tmp && \
   cd /app/www/apps/client && \
   yarn --frozen-lockfile && \
   yarn build && \
   yarn cache clean && \
+  rm -rf /app/www/node_modules && \
+  mv /app/www/node_modules.tmp /app/www/node_modules && \
   apk del --purge \
     build-dependencies && \
   rm -rf \
