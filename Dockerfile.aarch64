@@ -17,7 +17,7 @@ RUN \
     npm \
     python3-dev \
     yarn && \
-  echo "*** install your_spotify server ***" && \
+  echo "*** install your_spotify ***" && \
   if [ -z ${YOUR_SPOTIFY_VERSION+x} ]; then \
     YOUR_SPOTIFY_VERSION=$(curl -sX GET "https://api.github.com/repos/Yooooomi/your_spotify/releases/latest" \
     | awk '/tag_name/{print $4;exit}' FS='[""]'); \
@@ -29,19 +29,16 @@ RUN \
   tar xzf \
     /tmp/your_spotify.tar.gz -C \
     /app/www/ --strip-components=1 && \
+  echo "*** install your_spotify client ***" && \
   cd /app/www && \
   yarn --frozen-lockfile && \
+  cd /app/www/apps/client && \
+  yarn build && \
+  echo "*** install your_spotify server ***" && \
   cd /app/www/apps/server && \
   yarn build && \
-  yarn --production --frozen-lockfile && \
-  echo "*** install your_spotify client ***" && \
-  mv /app/www/node_modules /app/www/node_modules.tmp && \
-  cd /app/www/apps/client && \
-  yarn --frozen-lockfile && \
-  yarn build && \
-  yarn cache clean && \
   rm -rf /app/www/node_modules && \
-  mv /app/www/node_modules.tmp /app/www/node_modules && \
+  yarn cache clean && \
   apk del --purge \
     build-dependencies && \
   rm -rf \
@@ -58,20 +55,32 @@ LABEL maintainer="thespad"
 ENV HOME=/app
 
 COPY --from=buildstage /app/www/apps/client/build/ /app/www/apps/client/build/
-COPY --from=buildstage /app/www/node_modules/ /app/www/node_modules/
 COPY --from=buildstage /app/www/package.json /app/www/package.json
+COPY --from=buildstage /app/www/yarn.lock /app/www/yarn.lock
 COPY --from=buildstage /app/www/apps/server/lib/ /app/www/apps/server/lib/
 COPY --from=buildstage /app/www/apps/server/package.json /app/www/apps/server/package.json
 
 RUN \
+  echo "**** install buildstage packages ****" && \
+  apk -U --update --no-cache add --virtual=build-dependencies \
+    build-base \
+    cmake \
+    npm \
+    python3-dev \
+    yarn && \
   echo "**** install runtime packages ****" && \
   apk add -U --update --no-cache \
     nodejs \
     npm \
     yarn && \
   echo "**** install your_spotify ****" && \
+  cd /app/www/apps/server && \
+  yarn --production --frozen-lockfile && \
+  yarn cache clean && \
   npm install -g serve && \
   echo "**** cleanup ****" && \
+  apk del --purge \
+    build-dependencies && \
   rm -rf \
     /tmp/* \
     $HOME/.cache \
@@ -79,4 +88,4 @@ RUN \
 
 COPY /root /
 
-EXPOSE 3000 8080
+EXPOSE 80 443
