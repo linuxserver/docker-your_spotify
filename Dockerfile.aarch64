@@ -61,13 +61,11 @@ COPY --from=buildstage /app/www/apps/server/lib/ /app/www/apps/server/lib/
 COPY --from=buildstage /app/www/apps/server/package.json /app/www/apps/server/package.json
 
 RUN \
-  echo "**** install buildstage packages ****" && \
+  echo "**** install build packages ****" && \
   apk -U --update --no-cache add --virtual=build-dependencies \
     build-base \
     cmake \
-    npm \
-    python3-dev \
-    yarn && \
+    python3-dev && \
   echo "**** install runtime packages ****" && \
   apk add -U --update --no-cache \
     nodejs \
