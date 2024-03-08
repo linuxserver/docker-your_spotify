@@ -27,8 +27,8 @@ NAME                                VERSION                TYPE
 @tufjs/models                       2.0.0                  npm                      
 @types/webidl-conversions           7.0.3                  npm                      
 @types/whatwg-url                   11.0.4                 npm                      
-@your_spotify/root                  1.8.0                  npm                      
-@your_spotify/server                1.8.0                  npm                      
+@your_spotify/root                  1.8.1                  npm                      
+@your_spotify/server                1.8.1                  npm                      
 @zeit/schemas                       2.29.0                 npm                      
 abbrev                              2.0.0                  npm                      
 abort-controller                    3.0.0                  npm                      
