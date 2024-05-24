@@ -18,9 +18,6 @@ development_versions: false
 
 # container parameters
 param_container_name: "{{ project_name }}"
-param_usage_include_vols: false
-
-opt_param_usage_include_vols: false
 
 param_usage_include_ports: true
 param_ports:
@@ -34,8 +31,6 @@ param_env_vars:
   - { env_var: "SPOTIFY_SECRET", env_value: "", desc: "Your Spotify application secret."}
   - { env_var: "CORS", env_value: "http://localhost:80,https://localhost:443", desc: "Allowed CORS sources, set to `all` to allow any source."}
   - { env_var: "MONGO_ENDPOINT", env_value: "mongodb://mongo:27017/your_spotify", desc: "Set mongodb endpoint address/port."}
-# optional env variables
-opt_param_usage_include_env: false
 
 # application setup block
 app_setup_block_enabled: true
@@ -48,6 +43,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "24.05.24:", desc: "Rebase to Alpine 3.20." }
   - { date: "02.03.24:", desc: "Updates for changes in 1.8.0. Initial DB migration may take several minutes." }
   - { date: "24.01.24:", desc: "Existing users should update: site-confs/default.conf - Cleanup default site conf." }
   - { date: "23.12.23:", desc: "Rebase to Alpine 3.19 with php 8.3."}
