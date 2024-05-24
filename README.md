@@ -288,6 +288,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **24.05.24:** - Rebase to Alpine 3.20.
 * **02.03.24:** - Updates for changes in 1.8.0. Initial DB migration may take several minutes.
 * **24.01.24:** - Existing users should update: site-confs/default.conf - Cleanup default site conf.
 * **23.12.23:** - Rebase to Alpine 3.19 with php 8.3.
