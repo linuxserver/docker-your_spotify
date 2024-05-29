@@ -288,6 +288,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **27.05.24:** - Existing users should update their nginx confs to avoid http2 deprecation warnings.
 * **24.05.24:** - Rebase to Alpine 3.20.
 * **02.03.24:** - Updates for changes in 1.8.0. Initial DB migration may take several minutes.
 * **24.01.24:** - Existing users should update: site-confs/default.conf - Cleanup default site conf.
