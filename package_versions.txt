@@ -123,7 +123,7 @@ coreutils-sha512sum                 9.5-r1                 apk
 cors                                2.8.5                  npm                      
 cross-spawn                         7.0.3                  npm     (+1 duplicate)   
 cssesc                              3.0.0                  npm                      
-curl                                8.10.0-r0              apk                      
+curl                                8.9.1-r2               apk                      
 dateformat                          4.6.3                  npm                      
 debug                               2.6.9                  npm     (+1 duplicate)   
 debug                               4.3.4                  npm                      
@@ -226,7 +226,7 @@ libbase64                           0.5.2-r0               apk
 libbsd                              0.12.2-r0              apk                      
 libbz2                              1.0.8-r6               apk                      
 libcrypto3                          3.3.2-r0               apk                      
-libcurl                             8.10.0-r0              apk                      
+libcurl                             8.9.1-r2               apk                      
 libedit                             20240517.3.1-r0        apk                      
 libexpat                            2.6.3-r0               apk                      
 libgcc                              13.2.1_git20240309-r0  apk                      
@@ -350,21 +350,21 @@ path-to-regexp                      0.1.7                  npm
 path-to-regexp                      2.2.1                  npm                      
 pcre                                8.45-r3                apk                      
 pcre2                               10.43-r0               apk                      
-php83                               8.3.10-r0              apk                      
-php83-common                        8.3.10-r0              apk                      
-php83-ctype                         8.3.10-r0              apk                      
-php83-curl                          8.3.10-r0              apk                      
-php83-fileinfo                      8.3.10-r0              apk                      
-php83-fpm                           8.3.10-r0              apk                      
-php83-iconv                         8.3.10-r0              apk                      
-php83-mbstring                      8.3.10-r0              apk                      
-php83-openssl                       8.3.10-r0              apk                      
-php83-phar                          8.3.10-r0              apk                      
-php83-session                       8.3.10-r0              apk                      
-php83-simplexml                     8.3.10-r0              apk                      
-php83-xml                           8.3.10-r0              apk                      
-php83-xmlwriter                     8.3.10-r0              apk                      
-php83-zip                           8.3.10-r0              apk                      
+php83                               8.3.12-r0              apk                      
+php83-common                        8.3.12-r0              apk                      
+php83-ctype                         8.3.12-r0              apk                      
+php83-curl                          8.3.12-r0              apk                      
+php83-fileinfo                      8.3.12-r0              apk                      
+php83-fpm                           8.3.12-r0              apk                      
+php83-iconv                         8.3.12-r0              apk                      
+php83-mbstring                      8.3.12-r0              apk                      
+php83-openssl                       8.3.12-r0              apk                      
+php83-phar                          8.3.12-r0              apk                      
+php83-session                       8.3.12-r0              apk                      
+php83-simplexml                     8.3.12-r0              apk                      
+php83-xml                           8.3.12-r0              apk                      
+php83-xmlwriter                     8.3.12-r0              apk                      
+php83-zip                           8.3.12-r0              apk                      
 popt                                1.19-r3                apk                      
 postcss-selector-parser             6.0.16                 npm                      
 proc-log                            3.0.0                  npm                      
