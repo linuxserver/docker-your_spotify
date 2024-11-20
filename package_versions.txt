@@ -122,7 +122,7 @@ coreutils-fmt                       9.5-r1                 apk
 coreutils-sha512sum                 9.5-r1                 apk                      
 cors                                2.8.5                  npm                      
 cross-spawn                         7.0.3                  npm                      
-cross-spawn                         7.0.5                  npm                      
+cross-spawn                         7.0.6                  npm                      
 cssesc                              3.0.0                  npm                      
 curl                                8.9.1-r2               apk                      
 dateformat                          4.6.3                  npm                      
