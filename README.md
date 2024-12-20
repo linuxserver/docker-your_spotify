@@ -60,7 +60,7 @@ The architectures supported by this image are:
 
 You have to create a Spotify application through their [developer dashboard](https://developer.spotify.com/dashboard/applications) to get your Client ID and secret. Set the Redirect URI to match your APP_URL address with `/api/oauth/spotify/callback` included after the domain (i.e., `http://localhost/api/oauth/spotify/callback`).
 
-The application requires an external [mongodb database](https://hub.docker.com/_/mongo/), supported versions are 4.x, 5.x, and 6.x.
+The application requires an external [mongodb database](https://hub.docker.com/_/mongo/), supported versions are 5.x, 6.x, and 7.x.
 
 This ia an all-in-one container which includes both the server and client components. If you require these to be separate then please use the releases from the [your_spotify repo](https://github.com/Yooooomi/your_spotify).
 
@@ -292,6 +292,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **20.12.24:** - Rebase to Alpine 3.21.
 * **27.05.24:** - Existing users should update their nginx confs to avoid http2 deprecation warnings.
 * **24.05.24:** - Rebase to Alpine 3.20.
 * **02.03.24:** - Updates for changes in 1.8.0. Initial DB migration may take several minutes.

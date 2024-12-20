@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.20 as buildstage
+FROM ghcr.io/linuxserver/baseimage-alpine:3.21 as buildstage
 
 # set version label
 ARG BUILD_DATE
@@ -44,7 +44,7 @@ RUN \
   rm -rf \
     /tmp/*
 
-FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.20
+FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.21
 
 ARG BUILD_DATE
 ARG VERSION
