@@ -230,7 +230,7 @@ libbz2                              1.0.8-r6          apk
 libcrypto3                          3.3.3-r0          apk                      
 libcurl                             8.12.1-r0         apk                      
 libedit                             20240808.3.1-r0   apk                      
-libexpat                            2.6.4-r0          apk                      
+libexpat                            2.7.0-r0          apk                      
 libgcc                              14.2.0-r4         apk                      
 libidn2                             2.3.7-r0          apk                      
 libintl                             0.22.5-r0         apk                      
@@ -253,7 +253,7 @@ libssl3                             3.3.3-r0          apk
 libstdc++                           14.2.0-r4         apk                      
 libunistring                        1.2-r0            apk                      
 libuuid                             2.40.4-r0         apk                      
-libxml2                             2.13.4-r3         apk                      
+libxml2                             2.13.4-r5         apk                      
 libzip                              1.11.2-r0         apk                      
 linux-pam                           1.6.1-r1          apk                      
 lodash.includes                     4.3.0             npm                      
@@ -276,7 +276,7 @@ migrate                             2.1.0             npm
 mime                                1.6.0             npm                      
 mime-db                             1.33.0            npm                      
 mime-db                             1.52.0            npm     (+1 duplicate)   
-mime-db                             1.53.0            npm                      
+mime-db                             1.54.0            npm                      
 mime-types                          2.1.18            npm                      
 mime-types                          2.1.35            npm     (+1 duplicate)   
 mimic-fn                            2.1.0             npm                      
@@ -317,7 +317,7 @@ negotiator                          0.6.4             npm
 negotiator                          1.0.0             npm                      
 netcat-openbsd                      1.226.1.1-r0      apk                      
 nghttp2-libs                        1.64.0-r0         apk                      
-nginx                               1.26.2-r4         apk                      
+nginx                               1.26.3-r0         apk                      
 node-gyp                            10.2.0            npm                      
 nodejs                              22.13.1-r0        apk                      
 nopt                                7.2.1             npm                      
@@ -358,21 +358,21 @@ path-to-regexp                      0.1.10            npm
 path-to-regexp                      3.3.0             npm                      
 pcre                                8.45-r3           apk                      
 pcre2                               10.43-r0          apk                      
-php83                               8.3.17-r0         apk                      
-php83-common                        8.3.17-r0         apk                      
-php83-ctype                         8.3.17-r0         apk                      
-php83-curl                          8.3.17-r0         apk                      
-php83-fileinfo                      8.3.17-r0         apk                      
-php83-fpm                           8.3.17-r0         apk                      
-php83-iconv                         8.3.17-r0         apk                      
-php83-mbstring                      8.3.17-r0         apk                      
-php83-openssl                       8.3.17-r0         apk                      
-php83-phar                          8.3.17-r0         apk                      
-php83-session                       8.3.17-r0         apk                      
-php83-simplexml                     8.3.17-r0         apk                      
-php83-xml                           8.3.17-r0         apk                      
-php83-xmlwriter                     8.3.17-r0         apk                      
-php83-zip                           8.3.17-r0         apk                      
+php83                               8.3.18-r0         apk                      
+php83-common                        8.3.18-r0         apk                      
+php83-ctype                         8.3.18-r0         apk                      
+php83-curl                          8.3.18-r0         apk                      
+php83-fileinfo                      8.3.18-r0         apk                      
+php83-fpm                           8.3.18-r0         apk                      
+php83-iconv                         8.3.18-r0         apk                      
+php83-mbstring                      8.3.18-r0         apk                      
+php83-openssl                       8.3.18-r0         apk                      
+php83-phar                          8.3.18-r0         apk                      
+php83-session                       8.3.18-r0         apk                      
+php83-simplexml                     8.3.18-r0         apk                      
+php83-xml                           8.3.18-r0         apk                      
+php83-xmlwriter                     8.3.18-r0         apk                      
+php83-zip                           8.3.18-r0         apk                      
 popt                                1.19-r4           apk                      
 postcss-selector-parser             6.1.2             npm                      
 proc-log                            4.2.0             npm                      
