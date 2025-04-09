@@ -109,7 +109,7 @@ color-name                          1.1.4             npm     (+2 duplicates)
 combined-stream                     1.0.8             npm                      
 commander                           2.20.3            npm                      
 common-ancestor-path                1.0.1             npm                      
-composer                            2.8.6             binary                   
+composer                            2.8.7             binary                   
 compressible                        2.0.18            npm                      
 compression                         1.7.4             npm                      
 concat-map                          0.0.1             npm                      
@@ -464,7 +464,7 @@ tuf-js                              3.0.1             npm
 type-fest                           2.19.0            npm                      
 type-is                             1.6.18            npm                      
 typedarray                          0.0.6             npm                      
-tzdata                              2025a-r0          apk                      
+tzdata                              2025b-r0          apk                      
 unique-filename                     3.0.0             npm                      
 unique-filename                     4.0.0             npm                      
 unique-slug                         4.0.0             npm                      
