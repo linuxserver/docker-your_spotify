@@ -83,7 +83,7 @@ busybox                             1.37.0-r12        apk
 busybox-binsh                       1.37.0-r12        apk                      
 bytes                               3.0.0             npm                      
 bytes                               3.1.2             npm                      
-c-ares                              1.34.3-r0         apk                      
+c-ares                              1.34.5-r0         apk                      
 ca-certificates                     20241121-r1       apk                      
 ca-certificates-bundle              20241121-r1       apk                      
 cacache                             18.0.4            npm                      
@@ -109,7 +109,7 @@ color-name                          1.1.4             npm     (+2 duplicates)
 combined-stream                     1.0.8             npm                      
 commander                           2.20.3            npm                      
 common-ancestor-path                1.0.1             npm                      
-composer                            2.8.7             binary                   
+composer                            2.8.8             binary                   
 compressible                        2.0.18            npm                      
 compression                         1.7.4             npm                      
 concat-map                          0.0.1             npm                      
@@ -437,7 +437,7 @@ spdx-expression-parse               3.0.1             npm     (+1 duplicate)
 spdx-expression-parse               4.0.0             npm                      
 spdx-license-ids                    3.0.20            npm                      
 sprintf-js                          1.1.3             npm                      
-sqlite-libs                         3.48.0-r0         apk                      
+sqlite-libs                         3.48.0-r1         apk                      
 ssl_client                          1.37.0-r12        apk                      
 ssri                                10.0.6            npm                      
 ssri                                12.0.0            npm                      
@@ -490,7 +490,7 @@ wrap-ansi                           7.0.0             npm
 wrap-ansi                           8.1.0             npm     (+1 duplicate)   
 write-file-atomic                   6.0.0             npm                      
 xtend                               4.0.2             npm                      
-xz-libs                             5.6.3-r0          apk                      
+xz-libs                             5.6.3-r1          apk                      
 yallist                             4.0.0             npm                      
 yallist                             5.0.0             npm                      
 yarn                                1.22.22           npm                      
