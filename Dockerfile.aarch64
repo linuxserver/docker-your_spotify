@@ -28,21 +28,31 @@ RUN \
   mkdir -p /app/www && \
   tar xzf \
     /tmp/your_spotify.tar.gz -C \
-    /app/www/ --strip-components=1 && \
+    /app/www/ --strip-components=1
+
+FROM buildbase AS buildclient
+
+RUN \
   echo "*** install your_spotify client ***" && \
   cd /app/www && \
+  rm -rf /app/www/apps/server && \
   yarn --frozen-lockfile && \
   cd /app/www/apps/client && \
   yarn build && \
+  rm -rf /app/www/node_modules && \
+  yarn cache clean
+
+FROM buildbase AS buildserver
+
+RUN \
   echo "*** install your_spotify server ***" && \
+  cd /app/www && \
+  rm -rf /app/www/apps/client && \
+  yarn --frozen-lockfile && \
   cd /app/www/apps/server && \
   yarn build && \
   rm -rf /app/www/node_modules && \
-  yarn cache clean && \
-  apk del --purge \
-    build-dependencies && \
-  rm -rf \
-    /tmp/*
+  yarn cache clean
 
 FROM ghcr.io/linuxserver/baseimage-alpine-nginx:arm64v8-3.21
 
@@ -54,11 +64,11 @@ LABEL maintainer="thespad"
 
 ENV HOME=/app
 
-COPY --from=buildstage /app/www/apps/client/build/ /app/www/apps/client/build/
-COPY --from=buildstage /app/www/package.json /app/www/package.json
-COPY --from=buildstage /app/www/yarn.lock /app/www/yarn.lock
-COPY --from=buildstage /app/www/apps/server/lib/ /app/www/apps/server/lib/
-COPY --from=buildstage /app/www/apps/server/package.json /app/www/apps/server/package.json
+COPY --from=buildclient /app/www/apps/client/build/ /app/www/apps/client/build/
+COPY --from=buildbase /app/www/package.json /app/www/package.json
+COPY --from=buildbase /app/www/yarn.lock /app/www/yarn.lock
+COPY --from=buildserver /app/www/apps/server/lib/ /app/www/apps/server/lib/
+COPY --from=buildserver /app/www/apps/server/package.json /app/www/apps/server/package.json
 
 RUN \
   echo "**** install build packages ****" && \
