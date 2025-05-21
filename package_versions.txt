@@ -105,6 +105,8 @@ cidr-regex                          4.1.1             npm
 clean-stack                         2.2.0             npm                      
 cli-boxes                           3.0.0             npm                      
 cli-columns                         4.0.0             npm                      
+clipboard_i686                      UNKNOWN           binary                   
+clipboard_x86_64                    UNKNOWN           binary                   
 clipboardy                          3.0.0             npm                      
 cmd-shim                            7.0.0             npm                      
 color-convert                       2.0.1             npm     (+2 duplicates)  
@@ -112,7 +114,7 @@ color-name                          1.1.4             npm     (+2 duplicates)
 combined-stream                     1.0.8             npm                      
 commander                           2.20.3            npm                      
 common-ancestor-path                1.0.1             npm                      
-composer                            2.8.8             binary                   
+composer                            2.8.9             binary                   
 compressible                        2.0.18            npm                      
 compression                         1.7.4             npm                      
 concat-map                          0.0.1             npm                      
@@ -258,7 +260,7 @@ libssl3                             3.3.3-r0          apk
 libstdc++                           14.2.0-r4         apk                      
 libunistring                        1.2-r0            apk                      
 libuuid                             2.40.4-r1         apk                      
-libxml2                             2.13.4-r5         apk                      
+libxml2                             2.13.4-r6         apk                      
 libzip                              1.11.2-r0         apk                      
 linux-pam                           1.6.1-r1          apk                      
 lodash.includes                     4.3.0             npm                      
