@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.21 AS buildbase
+FROM ghcr.io/linuxserver/baseimage-alpine:3.22 AS buildbase
 
 # set version label
 ARG BUILD_DATE
@@ -54,7 +54,7 @@ RUN \
   rm -rf /app/www/node_modules && \
   yarn cache clean
 
-FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.21
+FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.22
 
 ARG BUILD_DATE
 ARG VERSION
