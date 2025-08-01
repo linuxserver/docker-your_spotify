@@ -30,8 +30,8 @@ NAME                                VERSION           TYPE
 @tufjs/models                       3.0.1             npm                      
 @types/webidl-conversions           7.0.3             npm                      
 @types/whatwg-url                   11.0.5            npm                      
-@your_spotify/root                  1.13.1            npm                      
-@your_spotify/server                1.13.1            npm                      
+@your_spotify/root                  1.14.0            npm                      
+@your_spotify/server                1.14.0            npm                      
 @zeit/schemas                       2.36.0            npm                      
 abbrev                              3.0.0             npm                      
 accepts                             1.3.8             npm                      
@@ -49,7 +49,7 @@ ansi-regex                          5.0.1             npm     (+1 duplicate)
 ansi-regex                          6.1.0             npm     (+2 duplicates)  
 ansi-styles                         4.3.0             npm     (+2 duplicates)  
 ansi-styles                         6.2.1             npm     (+1 duplicate)   
-apache2-utils                       2.4.64-r0         apk                      
+apache2-utils                       2.4.65-r0         apk                      
 apk-tools                           2.14.9-r2         apk                      
 append-field                        1.0.0             npm                      
 apr                                 1.7.5-r0          apk                      
