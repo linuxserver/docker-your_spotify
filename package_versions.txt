@@ -46,7 +46,8 @@ alpine-keys                         2.5-r0            apk
 alpine-release                      3.22.1-r0         apk                      
 ansi-align                          3.0.1             npm                      
 ansi-regex                          5.0.1             npm     (+1 duplicate)   
-ansi-regex                          6.1.0             npm     (+2 duplicates)  
+ansi-regex                          6.1.0             npm     (+1 duplicate)   
+ansi-regex                          6.2.0             npm                      
 ansi-styles                         4.3.0             npm     (+2 duplicates)  
 ansi-styles                         6.2.1             npm     (+1 duplicate)   
 apache2-utils                       2.4.65-r0         apk                      
@@ -77,8 +78,8 @@ bson                                6.10.3            npm
 buffer-equal-constant-time          1.0.1             npm                      
 buffer-from                         1.1.2             npm                      
 busboy                              1.6.0             npm                      
-busybox                             1.37.0-r18        apk                      
-busybox-binsh                       1.37.0-r18        apk                      
+busybox                             1.37.0-r19        apk                      
+busybox-binsh                       1.37.0-r19        apk                      
 bytes                               3.0.0             npm                      
 bytes                               3.1.2             npm                      
 c-ares                              1.34.5-r0         apk                      
@@ -433,7 +434,7 @@ spdx-expression-parse               4.0.0             npm
 spdx-license-ids                    3.0.21            npm                      
 sprintf-js                          1.1.3             npm                      
 sqlite-libs                         3.49.2-r1         apk                      
-ssl_client                          1.37.0-r18        apk                      
+ssl_client                          1.37.0-r19        apk                      
 ssri                                12.0.0            npm                      
 statuses                            2.0.1             npm                      
 streamsearch                        1.1.0             npm                      
