@@ -51,7 +51,7 @@ ansi-styles                         4.3.0             npm     (+2 duplicates)
 ansi-styles                         6.2.1             npm                      
 ansi-styles                         6.2.3             npm                      
 apache2-utils                       2.4.65-r0         apk                      
-apk-tools                           2.14.9-r2         apk                      
+apk-tools                           2.14.9-r3         apk                      
 append-field                        1.0.0             npm                      
 apr                                 1.7.5-r0          apk                      
 apr-util                            1.6.3-r1          apk                      
@@ -224,7 +224,7 @@ just-diff-apply                     5.5.0             npm
 jwa                                 1.4.1             npm                      
 jws                                 3.2.2             npm                      
 kareem                              2.6.3             npm                      
-libapk2                             2.14.9-r2         apk                      
+libapk2                             2.14.9-r3         apk                      
 libattr                             2.5.2-r2          apk                      
 libbsd                              0.12.2-r0         apk                      
 libbz2                              1.0.8-r6          apk                      
