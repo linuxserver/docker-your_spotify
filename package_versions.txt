@@ -79,8 +79,8 @@ bson                                7.0.0             npm
 buffer-equal-constant-time          1.0.1             npm                      
 buffer-from                         1.1.2             npm                      
 busboy                              1.6.0             npm                      
-busybox                             1.37.0-r19        apk                      
-busybox-binsh                       1.37.0-r19        apk                      
+busybox                             1.37.0-r20        apk                      
+busybox-binsh                       1.37.0-r20        apk                      
 bytes                               3.0.0             npm                      
 bytes                               3.1.2             npm     (+1 duplicate)   
 c-ares                              1.34.5-r0         apk                      
@@ -208,7 +208,7 @@ is-stream                           2.0.1             npm
 is-wsl                              2.2.0             npm                      
 isexe                               2.0.0             npm                      
 isexe                               3.1.1             npm                      
-jq                                  1.8.0-r0          apk                      
+jq                                  1.8.1-r0          apk                      
 json-parse-even-better-errors       5.0.0             npm                      
 json-schema-traverse                1.0.0             npm                      
 json-stringify-nice                 1.1.4             npm                      
@@ -426,7 +426,7 @@ spdx-expression-parse               3.0.1             npm     (+1 duplicate)
 spdx-expression-parse               4.0.0             npm                      
 spdx-license-ids                    3.0.22            npm                      
 sqlite-libs                         3.49.2-r1         apk                      
-ssl_client                          1.37.0-r19        apk                      
+ssl_client                          1.37.0-r20        apk                      
 ssri                                13.0.0            npm                      
 statuses                            2.0.1             npm                      
 streamsearch                        1.1.0             npm                      
