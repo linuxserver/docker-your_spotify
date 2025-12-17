@@ -49,7 +49,7 @@ ansi-regex                          5.0.1             npm     (+1 duplicate)
 ansi-regex                          6.2.2             npm                      
 ansi-styles                         4.3.0             npm     (+1 duplicate)   
 ansi-styles                         6.2.3             npm                      
-apache2-utils                       2.4.65-r0         apk                      
+apache2-utils                       2.4.66-r0         apk                      
 apk-tools                           2.14.9-r3         apk                      
 append-field                        1.0.0             npm                      
 apr                                 1.7.5-r0          apk                      
