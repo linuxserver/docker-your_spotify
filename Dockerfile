@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.22 AS buildbase
+FROM ghcr.io/linuxserver/baseimage-alpine:3.22 AS buildbase
 
 # set version label
 ARG BUILD_DATE
@@ -14,9 +14,8 @@ RUN \
   apk -U --update --no-cache add --virtual=build-dependencies \
     build-base \
     cmake \
-    curl \
     npm \
-    python3-dev && \
+    python3 && \
   npm install -g pnpm typescript && \
   echo "*** install your_spotify ***" && \
   if [ -z ${YOUR_SPOTIFY_VERSION+x} ]; then \
