@@ -15,8 +15,8 @@ RUN \
     build-base \
     cmake \
     npm \
-    python3-dev \
-    yarn && \
+    python3 && \
+  npm install -g pnpm typescript && \
   echo "*** install your_spotify ***" && \
   if [ -z ${YOUR_SPOTIFY_VERSION+x} ]; then \
     YOUR_SPOTIFY_VERSION=$(curl -sX GET "https://api.github.com/repos/Yooooomi/your_spotify/releases/latest" \
@@ -36,23 +36,23 @@ RUN \
   echo "*** install your_spotify client ***" && \
   cd /app/www && \
   rm -rf /app/www/apps/server && \
-  yarn --frozen-lockfile && \
+  CI=true pnpm install --frozen-lockfile && \
   cd /app/www/apps/client && \
-  yarn build && \
-  rm -rf /app/www/node_modules && \
-  yarn cache clean
+  pnpm typecheck && \
+  pnpm build
 
 FROM buildbase AS buildserver
 
 RUN \
   echo "*** install your_spotify server ***" && \
   cd /app/www && \
-  rm -rf /app/www/apps/client && \
-  yarn --frozen-lockfile && \
+  CI=true pnpm install --frozen-lockfile && \
   cd /app/www/apps/server && \
-  yarn build && \
-  rm -rf /app/www/node_modules && \
-  yarn cache clean
+  rm eslint.config.mts && \
+  pnpm typecheck && \
+  pnpm build && \
+  rm -rf node_modules && \
+  NODE_ENV=production CI=true pnpm install --production --frozen-lockfile
 
 FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.22
 
@@ -62,34 +62,18 @@ ARG YOUR_SPOTIFY_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thespad"
 
-ENV HOME=/app
+ENV HOME=/app \
+    NODE_ENV=production
 
 COPY --from=buildclient /app/www/apps/client/build/ /app/www/apps/client/build/
-COPY --from=buildbase /app/www/package.json /app/www/package.json
-COPY --from=buildbase /app/www/yarn.lock /app/www/yarn.lock
-COPY --from=buildserver /app/www/apps/server/lib/ /app/www/apps/server/lib/
-COPY --from=buildserver /app/www/apps/server/package.json /app/www/apps/server/package.json
+COPY --from=buildserver /app/www/apps/server/build/ /app/www/apps/server/build/
 
 RUN \
-  echo "**** install build packages ****" && \
-  apk -U --update --no-cache add --virtual=build-dependencies \
-    build-base \
-    cmake \
-    python3-dev && \
   echo "**** install runtime packages ****" && \
   apk add -U --update --no-cache \
-    nodejs \
-    npm \
-    yarn && \
-  echo "**** install your_spotify ****" && \
-  cd /app/www/apps/server && \
-  yarn --production --frozen-lockfile && \
-  yarn cache clean && \
-  npm install -g serve && \
+    nodejs && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
-  apk del --purge \
-    build-dependencies && \
   rm -rf \
     /tmp/* \
     $HOME/.cache \
