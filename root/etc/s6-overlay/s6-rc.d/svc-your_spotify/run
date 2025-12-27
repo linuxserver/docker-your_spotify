@@ -4,8 +4,8 @@
 export API_ENDPOINT="${APP_URL}/api"
 export CLIENT_ENDPOINT="${APP_URL}"
 
-s6-setuidgid abc yarn --cwd /app/www/apps/server migrate
+( cd /app/www/apps/server && s6-setuidgid abc node /app/www/apps/server/build/index.js --migrate )
 
 exec \
     s6-notifyoncheck -d -n 300 -w 1000 -c "nc -z localhost 8080" \
-        cd /app/www/apps/server s6-setuidgid abc yarn start
+        cd /app/www/apps/server s6-setuidgid abc node /app/www/apps/server/build/index.js
