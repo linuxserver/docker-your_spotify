@@ -1,4 +1,4 @@
-## Version 2025/07/09 - Changelog: https://github.com/linuxserver/docker-your_spotify/commits/main/root/defaults/nginx/site-confs/default.conf.sample
+## Version 2026/02/08 - Changelog: https://github.com/linuxserver/docker-your_spotify/commits/main/root/defaults/nginx/site-confs/default.conf.sample
 
 server {
     listen 80 default_server;
@@ -24,13 +24,21 @@ server {
     }
 
     location /api/ {
-        rewrite /foo/(.*) /$1  break;
+        rewrite /foo/(.*) /$1 break;
         proxy_set_header Upgrade $http_upgrade;
         proxy_pass http://localhost:8080/;
     }
 
-    # deny access to .htaccess/.htpasswd files
-    location ~ /\.ht {
+    # deny access to all dotfiles
+    location ~ /\. {
         deny all;
+        log_not_found off;
+        access_log off;
+        return 404;
+    }
+
+    # Allow access to the ".well-known" directory
+    location ^~ /.well-known {
+        allow all;
     }
 }
