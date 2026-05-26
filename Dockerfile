@@ -36,7 +36,7 @@ RUN \
   echo "*** install your_spotify client ***" && \
   cd /app/www && \
   rm -rf /app/www/apps/server && \
-  CI=true pnpm install --frozen-lockfile && \
+  CI=true pnpm install --frozen-lockfile  --dangerously-allow-all-builds && \
   cd /app/www/apps/client && \
   pnpm typecheck && \
   pnpm build
@@ -46,7 +46,7 @@ FROM buildbase AS buildserver
 RUN \
   echo "*** install your_spotify server ***" && \
   cd /app/www && \
-  CI=true pnpm install --frozen-lockfile && \
+  CI=true pnpm install --frozen-lockfile  --dangerously-allow-all-builds && \
   cd /app/www/apps/server && \
   rm eslint.config.mts && \
   pnpm typecheck && \

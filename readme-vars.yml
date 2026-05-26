@@ -23,6 +23,7 @@ param_env_vars:
   - {env_var: "APP_URL", env_value: "http://localhost", desc: "The protocol and hostname where the app will be accessed."}
   - {env_var: "SPOTIFY_PUBLIC", env_value: "", desc: "Your Spotify application client ID."}
   - {env_var: "SPOTIFY_SECRET", env_value: "", desc: "Your Spotify application secret."}
+  - {env_var: "SPOTIFY_API_DELAY_MS", env_value: "2000", desc: "Minimum delay in milliseconds between each spotify request. Can help with hitting 429 when importing data."}
   - {env_var: "CORS", env_value: "http://localhost:80,https://localhost:443", desc: "Allowed CORS sources, set to `all` to allow any source."}
   - {env_var: "MONGO_ENDPOINT", env_value: "mongodb://mongo:27017/your_spotify", desc: "Set mongodb endpoint address/port."}
 # application setup block
