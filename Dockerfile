@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-alpine:3.22 AS buildbase
+FROM ghcr.io/linuxserver/baseimage-alpine:3.24 AS buildbase
 
 # set version label
 ARG BUILD_DATE
@@ -54,7 +54,7 @@ RUN \
   rm -rf node_modules && \
   NODE_ENV=production CI=true pnpm install --production --frozen-lockfile
 
-FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.22
+FROM ghcr.io/linuxserver/baseimage-alpine-nginx:3.24
 
 ARG BUILD_DATE
 ARG VERSION
