@@ -59,7 +59,7 @@ nano                    9.1-r0            apk
 ncurses-terminfo-base   6.6_p20260516-r0  apk       
 netcat-openbsd          1.234.1-r0        apk       
 nghttp2-libs            1.69.0-r0         apk       
-nginx                   1.30.4-r0         apk       
+nginx                   1.30.4-r1         apk       
 nodejs                  24.17.0-r0        apk       
 oniguruma               6.9.10-r0         apk       
 openssl                 3.5.7-r0          apk       
